@@ -16,7 +16,7 @@ jobs:
       - name: Lint
         run: |
           pip install ruff
-          ruff check src/ scripts/
+           ruff check --select E,F --line-length 100 src/ scripts/
 
       - name: Build image
         run: docker build --build-arg EPOCHS=3 -t kws-api:${{ github.sha }} .
