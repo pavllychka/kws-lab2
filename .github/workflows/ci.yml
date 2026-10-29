@@ -5,7 +5,7 @@ on:
   pull_request:
 
 env:
-  ACC_THRESHOLD: 80
+  ACC_THRESHOLD: 99
 
 jobs:
   build-and-test:
