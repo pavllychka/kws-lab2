@@ -42,4 +42,4 @@ jobs:
 
       - name: Logs on failure
         if: failure()
-        run: docker logs kws
+        run: docker logs kws || true
